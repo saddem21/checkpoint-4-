@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ * {
+  box-sizing: border-box;
+} 
+body {
+  font-size: 25px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: white;
+}
+
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: gray;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: gray;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.row1 {
+  display: -webkit-flex;
+  display: flex;
+}
+.column1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 450px; /* Should be removed. Only for demonstration */
+  border-radius: 12px;
+  opacity: 0.5;
+
+
+}
+.column1:hover {
+  opacity: 1.0
+}  
+.column2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 280px; /* Should be removed. Only for demonstration */
+  border-radius: 12px;
+}
+.column3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+  border-radius: 12px;
+}
+.column4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+a.link1:link, a.link1:visited {
+  background-color: dodgerblue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a.link1:hover, a.link1:active {
+  background-color: blue;
+}
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#"><img src="https://www.docplanner.com/img/logo-default-group-en.svg?v=1" width="180" height="120"></a>
+    <div class="dropdown">
+      <button class="dropbtn">Départements
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Marketing et relations publiques</a>
+        <a href="#">Succès client et ventes</a>
+        <a href="#">Informatique,Produit,Données</a>
+        <a href="#">Finances et administration</a>
+        <a href="#">RH et plus</a>
+      </div>
+    </div>
+    <a href="#" style="float:right;">Carrière</a>
+    <a href="#" style="float:right;">A propos de nous</a>
+  </div>
+  <div style="margin-top:30px;margin-right:280px;margin-left:280px;text-align:center;">
+    <img src="https://www.docplanner.com/img/sygnet.png" width="80" height="30">
+    <h3 style="color:green;">Rendre l'expérience de la santé plus humaine</h3>
+    </div> 
+<div class="row1">
+<div class="column2" style="margin-left:90px;margin-right:50px;"><p>Nous voulons que les patients trouvent le médecin parfait et prennent rendez-vous de la manière la plus simple. Le parcours du patient doit être agréable, c'est pourquoi nous sommes toujours à ses côtés : pour l'aider à trouver les meilleurs soins possibles. N'importe quand n'importe où.</p></div>      
+<div class="column2" style="margin-right:90px;"><p>Nous aidons également les médecins à mieux gérer leur pratique et à bâtir leur réputation en ligne. Grâce à notre solution intégrée de bout en bout, les médecins peuvent non seulement améliorer leur présence en ligne, mais aussi consacrer leur temps à ce qui compte vraiment : leurs patients.</p></div>
+</div>   
+<div class="row1">
+  <div class="column1" style="background-color:green;margin-top:30px;margin-right:30px;margin-left:80px;color:white;border:2px solid green;"><img src="https://www.docplanner.com/icons/icon-patients.svg" width="150" height="80"><h4>Pour les patients</h4><p>Trouvez un médecin, réservez une visite et résolvez tout doute lié à la santé</p><h5><ins>Choisissez un pays</ins></h5></div>
+  <div class="column1" style="background-color:blue;margin-top:30px;margin-right:30px;color:white;border:2px solid blue;"><img src="https://www.docplanner.com/icons/icon-doctors.svg" width="150" height="80"><h4>Pour les médecins</h4><p>Gagnez du temps dans la gestion des visites et réduisez de moitié les non-présentations</p><h5><ins>Choisissez un pays</ins></h5></div>
+  <div class="column1" style="background-color:gray;margin-top:30px;margin-right:80px;color:white;border:2px solid gray;"><img src="https://www.docplanner.com/icons/icon-clinics.svg" width="150" height="80"><h4>Pour les cliniques</h4><p>Offrez une expérience patient exceptionnelle dans votre clinique</p><h5><ins>2 à 20 spécialistes</ins></h5><h5><ins>Plus de 20 spécialistes</ins></h5></div>
+</div>
+<div class="row1">
+  <div class="column2" style="margin-left:80px;margin-top:30px;margin-right:30px;"><p style="color:green;">Nous sommes une entreprise mondiale avec une culture locale</p></div>
+  <div class="column2" style="margin-top:30px;margin-right:30px;"><a href="#"><p style="color:gray;"><img src="https://www.docplanner.com/img/sygnet.png" width="40" height="20">ZnanyLekarz</p></a><a href="#"><p style="color:gray;"><img src="https://www.docplanner.com/img/sygnet.png" width="40" height="20">ZnamyLekar</p></a></div>
+  <div class="column2" style="margin-right:30px;margin-top:30px"><a href="#"><p style="color:gray;"><img src="https://www.docplanner.com/img/sygnet.png" width="40" height="20">Doctoralia</p></a><a href="#"><img src="https://www.docplanner.com/logos/logo-tuotempo.svg" width="120" height="70"></a></div>
+  <div class="column2" style="margin-left:30px;margin-top:30px;margin-right:30px;"><a href="#"><p style="color:gray;"><img src="https://www.docplanner.com/img/sygnet.png" width="40" height="20">MioDottore</p></a><a href="#"><img src="https://www.docplanner.com/logos/logo-gipo.svg" width="120" height="70"></a></div>
+  <div class="column2" style="margin-top:30px;margin-right:20px;"><a href="#"><p style="color:gray;"><img src="https://www.docplanner.com/img/sygnet.png" width="40" height="20">DoktorTakvimi</p></a><a href="#"><img src="https://www.docplanner.com/logos/logo-clinicloud.svg" width="120" height="70"></a></div>
+  </div>
+  <div style="background-color:turquoise;width:100%;height:540px">
+    <div class="row1">
+      <div class="column4" style="margin-top:20px;margin-left:60px;margin-right:30px;"><h2 style="padding-right:60px;color:green;">La plus grande
+        plateforme de soins de santé au monde</h2><p style="padding-right:60px;">Nous travaillons à partir de 7 bureaux dans le monde entier, donnant vie à Docplanner Group dans une douzaine de pays.</p></div>
+        <div class="column4" style="margin-top:20px;margin-right:30px;">
+          <div style="background-color:white;width:180px;height:180px;margin-bottom:20px;"></div>
+          <div style="background-color:white;width:180px;height:180px;"></div>
+        </div>
+        <div class="column4" style="margin-top:20px;margin-right:60px;">
+          <div style="background-color:white;width:180px;height:180px;margin-bottom:20px;"></div>
+          <div style="background-color:white;width:180px;height:180px;"></div>
+      </div>
+
+      </div>
+      </div>
+  <div style="text-align:center;margin-left:350px;margin-right:350px;margin-top:30px;">
+<h2 style="color:green;">Améliorer la vie de millions de personnes. Changez le vôtre pour toujours</h2>
+<p>Plus de 1400 coéquipiers partagent notre vision, nos objectifs et notre passion. Avec des bureaux à Varsovie, Barcelone, Istanbul, Rome, Bologne, Mexico et Curitiba, notre recherche de grands talents ne s'arrête jamais.</p>
+</div>
+<div class="row1">
+  <div class="column3" style="text-align:center;margin-top:30px;margin-right:30px;margin-left:150px;"><a href="#"><img src="https://www.docplanner.com/images/warsaw.png" width="300" height="300"><p style="text-align:left;">Varsovie</p></a></div>
+  <div class="column3" style="text-align:center;margin-top:30px;margin-right:30px;"><a href="#"><img src="https://www.docplanner.com/images/barcelona.png" width="300" height="300"><p style="text-align:left;">Barcelone</p></a></div>
+  <div class="column3" style="text-align:center;margin-top:30px;margin-right:150px"><a href="#"><img src="https://www.docplanner.com/images/istanbul.png" width="300" height="300"><p style="text-align:left;">Istanbul</p></a></div>
+  </div> 
+<div class="row1">
+  <div class="column3" style="text-align:center;margin-top:30px;margin-left:150px;margin-right:30px;"><a href="#"><img src="https://www.docplanner.com/images/rome.png" width="300" height="300"><p style="text-align:left;">Rome</p></a></div>      
+<div class="column3" style="text-align:center;margin-top:30px;margin-right:30px;"><a href="#"><img src="https://www.docplanner.com/images/bologna.png" width="300" height="300"><p style="text-align:left;">Bologne</p></a></div>
+<div class="column3" style="text-align:center;margin-top:30px;margin-right:150px;"><a href="#"><img src="https://www.docplanner.com/images/curitiba.png" width="300" height="300"><p style="text-align:left;">Curitiba</p></a></div>
+</div>
+<div class="row1">
+  <div class="column3" style="margin-left:150px;margin-top:30px;"><a href="#"><img src="https://www.docplanner.com/images/mexico-city.png" width="300" height="300"><p>Mexico</p></a></div>
+  </div>
+  <div style="margin-top:50px;margin-left:350px;margin-right:350px;text-align:center;">
+    <h3>Ça a l'air intéressant? Rejoignez nous</h3>
+    <h3>maintenant!</h3>
+    <a class="link1" href="#">VOIR TOUTES LES OUVERTURES EN COURS</a>
+    </div>
+</body>
+</html>
